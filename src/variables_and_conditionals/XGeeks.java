@@ -12,9 +12,19 @@ public static void main(String[] args) {
 
         // 1. Save the superpower for each person in a variable.
 
+	String power="being really tall.";
+	
         // 2. Ask the user to enter a name. Store their answer in a variable.
 
+	String ans=JOptionPane.showInputDialog("Enter a name.");
+	
         // 3. Show the superpower in a pop-up, depending on the name entered. 
 
+	String jack="Jeff";
+	if(ans.equalsIgnoreCase(jack)) {
+		JOptionPane.showMessageDialog(null, ans+"'s power is "+power);
     }
+	else {
+		JOptionPane.showMessageDialog(null, ans+" has no powers.");
 }
+}}
