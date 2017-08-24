@@ -27,21 +27,22 @@ public class NasaCountdown {
 		
 		// 1. countdown from 10 to 0
 		
-		for (int j = 0; j > answer; j++) {
+		for (int j = answer; j >= 0; j--) {
 			
-			{
+			
 			System.out.println(j);
 			try {
 				Thread.sleep(1000);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
-			}
-		}}
+			
+		
 
 		// 5. when the counting is done, print "blastoff!"
-	   JOptionPane.showMessageDialog(null,"Blastoff!");
-}
+	   
+	}}
+	JOptionPane.showMessageDialog(null,"Blastoff!");}
 static void speak(String words) {
    	 try {
    		 Runtime.getRuntime().exec("say " + words).waitFor();
